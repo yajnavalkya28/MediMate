@@ -5,7 +5,7 @@ import os
 os.environ['PYTHONIOENCODING'] = 'utf-8'  # Set encoding
 
 from groq_utils import initialize_groq, generate_response, create_initial_prompt, ask_clarifying_question, format_history  # Changed import
-from utils import load_api_key, translate_text
+from utils import translate_text
 
 def local_css(file_name):
     with open(file_name) as f:
