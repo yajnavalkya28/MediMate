@@ -1,7 +1,7 @@
 import os
 from utils import load_api_key
 import groq
-
+import streamlit as st
 def initialize_groq():
     """
     Initializes the Groq API client.
@@ -9,7 +9,7 @@ def initialize_groq():
     Returns:
         Groq client instance
     """
-    api_key = load_api_key()
+    api_key = st.secrets["api"]
     try:
         client = groq.Groq(api_key=api_key)
         return client
