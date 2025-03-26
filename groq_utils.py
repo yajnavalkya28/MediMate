@@ -1,6 +1,5 @@
 # groq_utils.py
 import os
-from utils import load_api_key
 import groq
 import random
 import re  # Import the regular expression module
